@@ -1,0 +1,27 @@
+.products-menu{
+    background: aqua;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: start;
+    padding-left: 30px;
+}
+.products-catogery{
+    text-align: start;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 0px 10px 0px;
+}
+.products-menu ul{
+    list-style: none;
+    text-align: start;
+    padding: 0px;
+}
+.products-menu li{
+    margin: 10px 0px;
+    padding-left: 10px;
+}
+
+.products-main{
+    background: chartreuse;
+}

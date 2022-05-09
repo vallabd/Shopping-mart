@@ -1,0 +1,144 @@
+body {
+    overflow: hidden; /* Hide scrollbars */
+    overflow-y: scroll;
+  }
+.topheader{
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+    background: #8A624A;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:#FFDEAD;
+
+}
+.brand-title{
+    font-size: 30px;
+    padding-left: 59px;
+    font-family: cursive;
+    cursor: pointer;
+    
+}
+.navbar-links {
+    height: 100%;
+}
+
+.mbnavbar-links {
+    background: #FFDEAD;
+    position: absolute;
+    justify-content: center;
+    display: block;
+    transition: right 1.5s;
+    border-radius: 10px;
+    top: 48px;
+    
+}
+.navbar-links > ul{
+    display: flex;
+    padding-right: 35px;
+    margin: 0;
+
+}
+.mbnavbar-links > ul{
+    padding-left: 1rem;
+}  
+    
+.navbar-links li{
+    list-style: none;
+    justify-content: center;
+
+}
+
+.mbnavbar-links li{
+    list-style: none;
+
+}
+.navbar-links li a{
+    text-decoration: none;
+    color: black;
+    margin: 7px;
+    display: block;
+    font-family: cursive;
+    font-size: 19px;
+    font-weight: 500;
+    position: relative;
+}
+.mbnavbar-links li a{
+    text-decoration: none;
+    color: black;
+    margin: 7px;
+    display: block;
+    font-family: cursive;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+}
+.navbar-links li a::after{
+    content: '';
+    height: 2px ;
+    width: 0%;
+    background-color: black;
+    display: block;
+    position: absolute;
+    transition: .4s ease-in-out;
+}
+.mbnavbar-links li a::after{
+    content: '';
+    height: 2px ;
+    width: 0%;
+    background-color: black;
+    display: block;
+    position: absolute;
+    transition: .4s ease-in-out;
+}
+
+.navbar-links li a:hover::after{
+    width: 100%;
+    
+}
+.mbnavbar-links li a:hover::after{
+    width: 100%;
+    
+}
+
+.toggle-button{
+    margin-top: 5px;
+    position: absolute;
+    display: none;
+    top: 15px;
+    right: 25px;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    align-content: center;
+    font-weight: bold
+}
+
+@media (max-width :700px){
+
+    .topheader{
+        font-size: 10px; 
+    }
+    .brand-title{
+        font-size: 22px;
+        padding-left: 0px;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .toggle-button{
+        display: flex;
+    }
+    
+    
+    
+    
+}

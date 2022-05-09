@@ -1,0 +1,39 @@
+.slider-container{
+    margin-bottom: 30px;
+}
+.sliderrow{
+    display: flex;
+    justify-content: center;
+    
+}
+.sliderdiv{
+    background: blanchedalmond;
+    margin-top: 20px;
+    height: 550px;
+    width: 1200px;
+    flex-wrap: nowrap;  
+}
+.slider{
+    background-image: url(../ImgS/3.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    min-height: 100%;
+    animation: slide 20s infinite;
+}
+@keyframes slide{
+    25%{
+        background-image: url(../ImgS/2.jpg);  
+    }
+    50%{
+        background-image: url(../ImgS/11.jpg);  
+    }
+    75%{
+        background-image: url(../ImgS/4.jpg);  
+    }
+    100%{
+        background-image: url(../ImgS/3.jpg);  
+    }
+}
+
