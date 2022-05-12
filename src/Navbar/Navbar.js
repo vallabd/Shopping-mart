@@ -1,10 +1,11 @@
 import React from 'react';
 import'./Navbar.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BsMenuButtonWideFill, BsFillMenuButtonFill } from 'react-icons/bs';
+import {  BsFillMenuButtonFill } from 'react-icons/bs';
 import {HashRouter,Route,Routes} from 'react-router-dom';
 import {Home} from '../Home/Home'
 import { Products  } from '../Products/Products';
+import { Cart } from '../Cart/Cart';
 
 
 
@@ -38,7 +39,7 @@ export default function Navbar() {
                     <li><a href='#/Products'>Products</a></li>
                     <li><a href='#/Cart'>Cart</a></li>
                     
-                    <li><a href='#/ContactUs'>Contact Us</a></li>
+                    
                    
                 </ul>
                 
@@ -51,6 +52,7 @@ export default function Navbar() {
             <Route path='/' element={<Home/>}/>
             <Route path='Home' element={<Home/>}/>
             <Route path='Products' element={<Products/>}/>
+            <Route path='Cart' element={<Cart/>}/>
             <Route path='/*' element={<Home/>}/>
            
           </Routes>

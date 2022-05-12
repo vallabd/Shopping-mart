@@ -1,6 +1,7 @@
 import React from 'react';
-import './Products.css'
-import {bootstrap} from 'bootstrap';
+import './Products.css';
+import { Category } from './Category/Category';
+
 export const Products = () => {
   return (
     <div className='row'>
@@ -18,7 +19,9 @@ export const Products = () => {
                         </ul>
                 </div>
       </div>
-      <div className='col-lg-10 products-main '>Products</div>
+      <div className='col-lg-10 products-main '>
+        <Category/>
+      </div>
     </div>
   )
 }

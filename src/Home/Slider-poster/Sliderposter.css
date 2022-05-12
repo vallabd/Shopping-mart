@@ -37,3 +37,12 @@
     }
 }
 
+@media  (max-width:700px) {
+    .sliderdiv{
+        background: blanchedalmond;
+        margin-top: 20px;
+        height: 225px;
+        width: 400px;
+        flex-wrap: nowrap;  
+    }
+}
