@@ -1,7 +1,5 @@
 import React from 'react';
 import './Keyoffering.css';
-import { Container, Row, Col } from 'react-bootstrap';
-
 
 export const Keyoffering = () => {
 

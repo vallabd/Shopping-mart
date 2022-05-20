@@ -6,7 +6,7 @@ body {
     display: flex;
     justify-content: center;
     padding: 2px;
-    background: #8A624A;
+    background: #974EC2;
     color: white;
     font-weight: 600;
     font-size: 15px;
@@ -16,7 +16,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background:#FFDEAD;
+    background:#F57DBA;
 
 }
 .brand-title{
@@ -119,6 +119,11 @@ body {
     cursor: pointer;
     align-content: center;
     font-weight: bold
+}
+.cart-dynamic{
+    border: solid;
+    border-radius: 40px;
+    background: white;
 }
 
 @media (max-width :700px){

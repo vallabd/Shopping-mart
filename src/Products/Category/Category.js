@@ -1,45 +1,33 @@
 import React from 'react';
 import './Category.css';
+import { connect } from 'react-redux';
+import { addToCart } from '../../Reduxstore/Shopping/Shopping-action';
 
-export const Category = () => {
-    var Catagorydata={
-        items:[
-            {
-                id:'101',
-                name:'instant coffee',
-                price:'999',
-                info:'authontic instant coffee with frashning teast',
-                img: '/Img/cb8.jpg',
-
-            },
-            {
-                id:'101',
-                name:'instant coffee',
-                price:'999',
-                info:'authontic instant coffee with frashning teast',
-                img: '/Img/cb8.jpg',
-
-            }
-        ]
-    }
+const Category = ({productData, addToCart}) => {
   return (
     <div >
             <div className='category'>
-                {
-                    Catagorydata.items.map((Object)=>{
-                        return <div>
-                                    <div className='product-card' >
-                                        <div className='img-div'><img key={Object.id} src={Object.img} aalt="cb" className='img '/></div>
-                                            <div className='product-content'>
-                                                    <h3 key={Object.id}>{Object.name}</h3>
-                                                    <div key={Object.id}>{Object.name}</div>
-                                                    <button>Add to cart</button>
-                                            </div>
-                                    </div>
-                                </div>
-                    })
-                }
+                
+                      <div>
+                        <div className='product-card' >
+                        <div className='img-div'><img key={productData.id} src={productData.img} aalt="cb" className='img '/></div>
+                            <div className='product-content'>
+                                <h3 key={productData.id}>{productData.name}</h3>
+                                <div key={productData.id}>{productData.info}</div>
+                                <button onClick={()=> addToCart(productData.id)}>Add to cart</button>
+                            </div>
+                        </div>
+                      </div>
+                    
+                
             </div>
     </div>
   )
 }
+
+const mapDispatchToProps= dispatch =>{
+  return {
+    addToCart:(id) => dispatch(addToCart(id))
+  }
+}
+export default connect(null, mapDispatchToProps)(Category);

@@ -1,6 +1,6 @@
 import * as actionTypes from './Shopping-types';
 
-export const addTocart = (itemID) =>{
+export const addToCart = (itemID) =>{
     return {
         type: actionTypes.ADD_TO_CARD,
         payload:{
@@ -8,7 +8,7 @@ export const addTocart = (itemID) =>{
         },
     };
 };
-export const removeFromcart = (itemID) =>{
+export const removeFromCart = (itemID) =>{
     return {
         type: actionTypes.REMOVE_FROM_CART,
         payload:{

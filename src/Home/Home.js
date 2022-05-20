@@ -5,8 +5,7 @@ import { Bestsellers } from './Best-sellers/Bestsellers';
 import {About} from './About/About'
 
 
-
-export const Home = () => {
+const Home = () => {
 
   return (
     <div className='container-fluid'>
@@ -18,3 +17,5 @@ export const Home = () => {
     </div>
   )
 }
+
+export default Home;

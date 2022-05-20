@@ -1,6 +1,4 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import {bootstrap} from 'bootstrap';
 import './Footer.css';
 import { BsFacebook,BsWhatsapp,BsInstagram,BsLinkedin,BsFillMenuButtonFill} from 'react-icons/bs';
 import { SiGooglemaps } from "react-icons/si";

@@ -1,27 +1,51 @@
-.products-menu{
-    background: aqua;
+.products-menu {
     display: flex;
     flex-direction: column;
-    
     justify-content: start;
     padding-left: 30px;
+
 }
-.products-catogery{
+
+.products-catogery {
     text-align: start;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 21px;
+    font-weight: 500;
     padding: 10px 0px 10px 0px;
+    font-family: cursive;
 }
-.products-menu ul{
+
+.products-menu ul {
     list-style: none;
     text-align: start;
     padding: 0px;
 }
-.products-menu li{
-    margin: 10px 0px;
-    padding-left: 10px;
+
+.products-menu li {
+    margin: 5px 0px;
+    padding-left: 20px;
+    font-family: cursive;
 }
 
+
+
+.products-menu li a {
+    cursor: pointer;
+}
+
+.products-menu li a:hover {
+    font-size: 20px;
+}
+
+
+.cat-heading {
+    text-align: left;
+    font-size: 30px;
+}
+
+.card-title {
+    text-align: left;
+}
 .products-main{
-    background: chartreuse;
+    display: flex;
+    justify-content: space-around;
 }

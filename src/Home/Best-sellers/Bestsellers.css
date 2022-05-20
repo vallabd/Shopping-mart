@@ -5,11 +5,14 @@
 .mh{
     margin-top: 110px;
     margin-bottom: 15px;
+    color: antiquewhite;
+    font-family: monospace;
 }
 .subh{
     margin-bottom: 60px;
     font-style: italic;
-    font-family: math;
+    color: antiquewhite;
+    font-family: monospace;
 }
 
 .card-container{

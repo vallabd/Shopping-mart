@@ -1,5 +1,5 @@
 .Footer{
-    background:#FFDEAD;
+    
     width: 100%;
     bottom: 0px;
     display: flex;
@@ -29,7 +29,7 @@
     width: 300px;
     height: 250px;
     padding: 2rem 1rem;
-    background: #fff;
+    /* background: #fff; */
     position: relative;
     display: flex;
     align-items: flex-end;
@@ -65,7 +65,7 @@
     display: block;
     justify-content: space-between;
     align-items: center;
-    background:#FFDEAD;
+    /* background:#FFDEAD; */
 
 }
 .menu-links{
@@ -101,7 +101,7 @@
   }
 .rights-reserved{
     justify-content: center;
-    background: #FFDEAD;
+    /* background: #FFDEAD; */
     font-family: cursive;
     font-weight: 500;
 }

@@ -1,17 +1,25 @@
-import React from 'react';
+import React,{useState, useEffect,lazy,Suspense} from 'react';
 import'./Navbar.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {  BsFillMenuButtonFill } from 'react-icons/bs';
+import { MdShoppingCart } from "react-icons/md";
 import {HashRouter,Route,Routes} from 'react-router-dom';
-import {Home} from '../Home/Home'
-import { Products  } from '../Products/Products';
-import { Cart } from '../Cart/Cart';
+  
+import { connect } from 'react-redux';
+
+const Home=lazy(()=>import ('../Home/Home'));
+const Products=lazy(()=>import ('../Products/Products'));
+const Cart=lazy(()=>import ('../Cart/Cart'));
 
 
 
-export default function Navbar() {
+
+const Navbar=( {cart})=> {
+  const [cartCount,setCartCount ] = useState(0);
   const[rightside,setRightside]=React.useState(-200)
   const [isMobileview,setIsMobilview]=React.useState(document.body.offsetWidth<=700 ? true:false)
+
+
 
   window.addEventListener('resize',function(){
     let deviceWidth=document.body.offsetWidth;
@@ -26,6 +34,14 @@ export default function Navbar() {
   
     setRightside(rightside==2 ? -150: 2)
   }
+  useEffect(()=>{
+    var count=0;
+    cart.forEach(item=>{
+      count+= item.qty;  
+    } );
+    setCartCount(count)
+  }, [cart,cartCount]);
+ 
   
   return (
     <div>
@@ -37,7 +53,7 @@ export default function Navbar() {
                 <ul>
                     <li><a href='#/Home'>Home</a></li>
                     <li><a href='#/Products'>Products</a></li>
-                    <li><a href='#/Cart'>Cart</a></li>
+                    <li className='cart-dynamic'><a href='#/Cart' >Cart <MdShoppingCart/> {cartCount}</a></li>
                     
                     
                    
@@ -45,8 +61,10 @@ export default function Navbar() {
                 
             </div>
         </nav>
-
-        <HashRouter>
+        <Suspense fallback='...loading'>
+            <HashRouter>
+          
+            
           <Routes>
             
             <Route path='/' element={<Home/>}/>
@@ -56,7 +74,18 @@ export default function Navbar() {
             <Route path='/*' element={<Home/>}/>
            
           </Routes>
-        </HashRouter>
+          
+          </HashRouter>
+        </Suspense>
     </div>
   )
+};
+
+const mapStateToProps= state=> {
+  return {
+    cart: state.shop.cart 
+  }
 }
+
+
+export default connect (mapStateToProps)(Navbar);
