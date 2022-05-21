@@ -4,8 +4,8 @@ import './Cart.css'
 
 import { connect } from 'react-redux';
 const Cart=({cart})=> {
-  const [totalPrice,setTotalPrice]=useState(0);
-  const [totalItems,setTotalItems]=useState(0);
+  const [totalPrice,setTotalPrice]= useState(0);
+  const [totalItems,setTotalItems]= useState(0);
   
   useEffect(()=>{
     let items = 0;
@@ -17,11 +17,12 @@ const Cart=({cart})=> {
     })
     setTotalItems(items);
     setTotalPrice(price);
-  },[cart,totalPrice,setTotalPrice,totalItems,setTotalItems])
+  },[cart,totalPrice ,totalItems,setTotalPrice,setTotalItems]);
+
     return (
     <div className='cart'>
       {cart.map((item)=> (
-        <CartItem key={item.id} itemData={item}/>
+        <CartItem key={item.id} item={item}/>
       ))
       }
       
@@ -40,11 +41,11 @@ const Cart=({cart})=> {
   )
 }
 
-const mapStateToProps=  state=>{
+const mapStateToProps=  (state)=>{
 return{
-  cart: state.shop.cart
-}
-}
+  cart: state.shop.cart,
+};
+};
 
 
 

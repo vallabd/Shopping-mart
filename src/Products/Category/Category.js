@@ -1,5 +1,7 @@
 import React from 'react';
 import './Category.css';
+import { AiFillDelete } from "react-icons/ai";
+
 import { connect } from 'react-redux';
 import { addToCart } from '../../Reduxstore/Shopping/Shopping-action';
 
@@ -15,6 +17,7 @@ const Category = ({productData, addToCart}) => {
                                 <h3 key={productData.id}>{productData.name}</h3>
                                 <div key={productData.id}>{productData.info}</div>
                                 <button onClick={()=> addToCart(productData.id)}>Add to cart</button>
+                                
                             </div>
                         </div>
                       </div>

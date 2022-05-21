@@ -1,5 +1,6 @@
 import * as actionTypes from './Shopping-types';
 
+
 const INITIAL_STATE={
     products: [
         {
@@ -8,6 +9,8 @@ const INITIAL_STATE={
             price:150,
             info:'authontic instant coffee with frashning teast',
             img: '/Img/cb8.jpg',
+            delete: '/Img/delete2.png',
+            
 
         },
         {
@@ -16,8 +19,9 @@ const INITIAL_STATE={
             price:100,
             info:'authontic instant coffee with frashning teast',
             img: '/Img/cb7.jpg',
+            delete: '/Img/delete2.png',
 
-        }
+        },
     ], // (id,titie,description, price,img)
     cart:[], // (id,titie,description, price,img, qty)
     currentItem:null, 
@@ -46,7 +50,10 @@ const shopReducer=(state=INITIAL_STATE,action )=>{
         case actionTypes.ADJUST_QTY:
             return {
                 ...state,
-                cart: state.cart.map(item => item.id === action.payload.id ? {...item, qty: action.payload.qty}: item) 
+                cart: state.cart.map((item) => 
+                item.id === action.payload.id 
+                ? {...item, qty: +action.payload.qty}: item
+                ) 
             };
         case actionTypes.LOAD_CURRENT_ITEM: 
             return {
