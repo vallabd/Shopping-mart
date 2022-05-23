@@ -1,6 +1,5 @@
 import React from 'react';
 import './Category.css';
-import { AiFillDelete } from "react-icons/ai";
 
 import { connect } from 'react-redux';
 import { addToCart } from '../../Reduxstore/Shopping/Shopping-action';

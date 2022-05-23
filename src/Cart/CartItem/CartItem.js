@@ -1,7 +1,5 @@
 import React, {useState} from 'react'
 import './CartItem.css';
-import { AiFillDelete } from "react-icons/ai";
-
 
 import { connect } from 'react-redux';
 import { removeFromCart,adjustQty } from '../../Reduxstore/Shopping/Shopping-action';
