@@ -3,6 +3,7 @@
     width: 1100px;
     display: flex;
     justify-content: space-between;
+  
    
     
   }
@@ -14,6 +15,7 @@
   
   .cart__summary {
     height: 250px;
+    width: 300px;
     flex: 0.3;
     display: flex;
     flex-direction: column;
@@ -21,21 +23,21 @@
     padding: 1rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
     border-radius: 10px;
-    color: antiquewhite;
+    color: black;
     font-family: monospace;
   }
   
   .summary__title {
     font-size: 1.2rem;
     font-weight: bold;
-    color: antiquewhite;
+    color: black;
     font-family: monospace;
   }
   
   .summary__price {
     display: flex;
     align-items: center;
-    color: antiquewhite;
+    color: black;
     font-family: monospace;
   }
   
@@ -59,6 +61,7 @@
     font-size: 1.2rem;
     font-weight: bold;
     cursor: pointer;
+    background-color: #696969;
   }
   
   .summary__checkoutBtn:focus {

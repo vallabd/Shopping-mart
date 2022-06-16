@@ -20,13 +20,15 @@ const Cart=({cart})=> {
   },[cart,totalPrice ,totalItems,setTotalPrice,setTotalItems]);
 
     return (
-    <div className='cart'>
+      <div className='cart'>
+    <div className=' col-lg-8 '>
       {cart.map((item)=> (
         <CartItem key={item.id} item={item}/>
       ))
       }
-      
-      <div className="cart__summary">
+      </div>
+      <div>
+      <div className="col-lg-4 cart__summary ">
         <h4 className="summary__title">Cart Summary</h4>
         <div className="summary__price">
           <span>TOTAL:({totalItems}) </span>
@@ -37,6 +39,7 @@ const Cart=({cart})=> {
         </button>
       </div>
       
+    </div>
     </div>
   )
 }

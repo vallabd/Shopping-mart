@@ -7,7 +7,7 @@ export const Bestsellers = () => {
         Items:[
         {
             id:"1",
-            image:'/Img/cb4.jpg',
+            image:'/Img1/cb4.jpg',
             heading:'COFFEE BEANS',
             information: 'A coffee bean is a seed of the Coffea plant and the source for coffee. It is the pip inside the red or purple fruit often referred to as a cherry.',
             path:'#'
@@ -15,7 +15,7 @@ export const Bestsellers = () => {
         },
         {
             id:"2",
-            image:'/Img/cb5.jpg',
+            image:'/Img1/cb5.jpg',
             heading:'COFFEE BEANS',
             information: 'A coffee bean is a seed of the Coffea plant and the source for coffee. It is the pip inside the red or purple fruit often referred to as a cherry.',
             path:'#'
@@ -23,7 +23,7 @@ export const Bestsellers = () => {
         },
         {
             id:"3",
-            image:'/Img/cb6.jpg',
+            image:'/Img1/cb6.jpg',
             heading:'COFFEE BEANS',
             information: 'A coffee bean is a seed of the Coffea plant and the source for coffee. It is the pip inside the red or purple fruit often referred to as a cherry.',
             path:'#'
@@ -31,7 +31,7 @@ export const Bestsellers = () => {
         },
         {
             id:"4",
-            image:'/Img/cb7.jpg',
+            image:'/Img1/cb7.jpg',
             heading:'COFFEE BEANS',
             information: 'A coffee bean is a seed of the Coffea plant and the source for coffee. It is the pip inside the red or purple fruit often referred to as a cherry.',
             path:'#'

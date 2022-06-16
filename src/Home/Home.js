@@ -11,8 +11,8 @@ const Home = () => {
     <div className='container-fluid'>
         <Sliderposter/>
         <Keyoffering/>
-        <Bestsellers/>
-        <About/>
+        
+        
         
     </div>
   )
