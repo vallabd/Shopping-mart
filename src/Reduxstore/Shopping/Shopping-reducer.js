@@ -18,7 +18,7 @@ const INITIAL_STATE={
             name:'instant tea',
             price:100,
             info:'authontic instant coffee with frashning teast',
-            img: '/Img/cb7.jpg',
+            img: '/Img/cb2.jpg',
             delete: '/Img/delete2.png',
 
         },

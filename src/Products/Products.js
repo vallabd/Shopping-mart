@@ -13,10 +13,10 @@ const Products = ( {products}) => {
               </div>
               <div>
                 <ul>
-                  <li ><a> {'>>'} Item 1</a></li>
-                  <li><a> {'>>'} Item 2</a></li>
-                  <li><a> {'>>'} Item 3</a></li>
-                  <li><a> {'>>'} Item 4</a></li>
+                  <li ><a> {'>>'} Tea </a></li>
+                  <li><a> {'>>'} Coffee </a></li>
+                  <li><a> {'>>'} Greeen Tea </a></li>
+                  <li><a> {'>>'} Coffee beans </a></li>
                 </ul>
               </div>
             </div>

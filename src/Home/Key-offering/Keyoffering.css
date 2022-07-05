@@ -5,13 +5,15 @@
 .mh{
     margin-top: 110px;
     margin-bottom: 15px;
-    color: antiquewhite;
+    color: black !important;
     font-family: monospace;
+    font-style: normal;
 }
 .subh{
     margin-bottom: 60px;
-    color: antiquewhite;
+    color: black !important ;
     font-family: monospace;
+    font-style: normal;
 }
 
 .card-container{

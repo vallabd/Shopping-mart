@@ -22,7 +22,11 @@ const CartItem = ({item, removeFromCart, adjustQty}) => {
                                 <h3 key={item.id}>{item.name}</h3>
                                 <div key={item.id}>{item.info}</div>
                                 
-                                <label htmlFor="qty">Qty</label>
+                                    
+                                
+                            </div>
+                            <div className='Product-Qty'>
+                                <label htmlFor="qty">Qty : </label>
                                         <input
                                           min="1"
                                           type="number"
@@ -31,12 +35,11 @@ const CartItem = ({item, removeFromCart, adjustQty}) => {
                                           value={input}
                                           onChange={onChangeHandler}
                                         />
-                                
-                                    <button onClick={() => removeFromCart(item.id)} className='actions__deleteItemBtn'>
+                                  <button onClick={() => removeFromCart(item.id)} className='actions__deleteItemBtn'>
                                                 <img key={item.id} src= {item.delete}/>
-                                    </button>
+                                  </button>
+                                </div>
                                 
-                            </div>
                         </div>
       </div>
       </div>

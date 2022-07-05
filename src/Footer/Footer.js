@@ -13,7 +13,7 @@ export function Footer() {
           <div className='heading-maps'>Our Location   <SiGooglemaps/></div>
                             <div className='googlecard'>
                   
-                                <img src="./Img/gm.jpg" alt="cb" className='img' />
+                                <img src="./Img/gm.jpg" alt="cb" className='googlecard-img' />
                                 
                             </div>
           </div> 
@@ -45,7 +45,6 @@ export function Footer() {
                     <li><a href='#/Home'>Home</a></li>
                     <li><a href='#/Products'>Products</a></li>
                     <li><a href='#/Cart'>Cart</a></li>
-                    
                     <li><a href='#/ContactUs'>Contact Us</a></li>
                    
                 </ul>

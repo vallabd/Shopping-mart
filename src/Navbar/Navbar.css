@@ -22,7 +22,8 @@ body {
 .brand-title{
     font-size: 30px;
     padding-left: 59px;
-    font-family: cursive;
+    font-family: initial;
+    font-weight: 600;
     cursor: pointer;
     
 }
@@ -65,8 +66,9 @@ body {
     color: black;
     margin: 7px;
     display: block;
-    font-family: cursive;
-    font-size: 19px;
+    font-family: initial;
+    font-weight: 600;
+    font-size: 22px;
     font-weight: 500;
     position: relative;
 }
@@ -75,7 +77,8 @@ body {
     color: black;
     margin: 7px;
     display: block;
-    font-family: cursive;
+    font-family: initial;
+    font-weight: 600;
     font-size: 16px;
     font-weight: 500;
     position: relative;
